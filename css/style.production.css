@@ -6,21 +6,23 @@ backgroud: AliceBlue #F0F8FF
 */
 
 a {
-  color: #357b70
+  color: #357b70;
 }
 
 body {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 16px;
+
   /* Sets the font size to 16px */
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 */
-  background-color: #F0F8FF
+  background-color: #f0f8ff;
 }
 
 h1 {
-  color: #0B098A;
+  color: #0b098a;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
@@ -41,7 +43,8 @@ a:visited {
   color: #05676e;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
@@ -54,22 +57,28 @@ a:active {
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
+
   /* take the font from the outer container */
-  front-family: inherit;
+  font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #357b70;
   color: white;
   text-decoration: none;
+
   /* adds spacing to the button (more to discuss later) */
   padding: 10px;
   border-radius: 3px;
+
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -97,8 +106,8 @@ button:hover, button:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -110,7 +119,7 @@ button:hover, button:focus {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .page-header {
@@ -123,14 +132,14 @@ button:hover, button:focus {
 
 .page-header_item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header_item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -153,7 +162,7 @@ button:hover, button:focus {
 
 .grid_item {
   display: inline-block;
-  width: 33%
+  width: 33%;
 }
 
 .grid {
@@ -183,14 +192,17 @@ button:hover, button:focus {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: #357b70;
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
@@ -202,14 +214,17 @@ button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: #357b70;
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
@@ -222,8 +237,10 @@ button:focus,
 .button:hover,
 .button:focus {
   /* styling goes here */
+
   /* let the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -232,9 +249,11 @@ button:focus,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -244,9 +263,11 @@ button:focus,
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -259,28 +280,30 @@ button:focus,
   animation-direction: alternate;
   animation-timing-function: linear; */
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
@@ -291,34 +314,36 @@ button:focus,
   animation-direction: alternate;
   animation-timing-function: linear; */
   -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @-webkit-keyframes rollIn {
@@ -350,7 +375,7 @@ button:focus,
 }
 
 .rollIn {
-  -webkit-animation-name: rollIn;
+  -webkit-animation-name: rollin;
   animation-name: rollIn;
 }
 
@@ -374,10 +399,12 @@ button:focus,
   .grid {
     grid-gap: 10px;
   }
+
   .grid_item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
